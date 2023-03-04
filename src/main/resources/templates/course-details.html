@@ -1,0 +1,533 @@
+<!DOCTYPE HTML>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>LeanjaVa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description website">
+    <meta name="keywords" content="website, with, meta, tags">
+    <!-- Css -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/slick.css" rel="stylesheet">
+    <link href="static/css/magnific-popup.css" rel="stylesheet">
+    <link href="static/css/animate.css" rel="stylesheet">
+    <link href="static/css/flaticon.css" rel="stylesheet">
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/responsive.css" rel="stylesheet">
+    <link href="static/css/courses.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Preloader Start -->
+<div class="preloader">
+    <img src="static/picture/preloader.svg" alt="preloader">
+</div>
+<!-- Preloader End -->
+<!-- Mobile Menu Start -->
+<aside class="aside_bar aside_bar_left aside_mobile">
+    <!-- logo -->
+    <a href="index1.html" class="logo">
+        <img src="static/picture/logo.png" alt="logo">
+    </a>
+    <!-- logo -->
+    <!-- Menu -->
+    <nav>
+        <ul class="main-menu">
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Home</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="index1.html">Home v1</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index-2.html">Home v2</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index-3.html">Home v3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Pages</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about-2.html">About Me</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="videos.html">Videos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Team</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="team.html">Team</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="team-details.html">Team Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="faqs.html">FAQ's</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Courses</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="courses.html">Courses</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Course Details</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Blog</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="blog-grid.html">Blog Grid</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog-list.html">Blog List</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog-masonry.html">Blog Masonry</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog-details.html">Blog Details</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Portfolio</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="portfolio-grid.html">Portfolio Grid</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portfolio-gallery.html">Portfolio Gallery</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portfolio-masonry.html">Portfolio Masonry</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portfolio-details.html">Portfolio Details</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="contact.html">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Menu -->
+</aside>
+<div class="aside-overlay trigger-left"></div>
+<!-- Mobile Menu End -->
+<!-- Header Start -->
+<header class="header header-3">
+    <div class="nav_sec">
+        <div class="container">
+            <!-- inner -->
+            <div class="nav_warp" id="coursenav">
+                <nav>
+                    <!-- logo start -->
+                    <div class="logo">
+                        <a href="index1.html">
+                            <img src="static/picture/logo.png" alt="logo" class="logopic1">
+                        </a>
+                    </div>
+                    <!-- logo end -->
+                    <!-- Navigation Start -->
+                    <ul class="main-menu">
+                        <li class="menu-item menu-item-has-children">
+                            <a th:href="@{/index}">主页</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a th:href="@{/course}">课程</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- inner -->
+        </div>
+    </div>
+    <!-- Search Start -->
+    <div class="search-form-wrapper">
+        <div class="close-search-trigger close_trigger">
+            <span></span>
+            <span></span>
+        </div>
+        <form class="search-form">
+            <input type="text" placeholder="搜索课程名" value="" required="">
+            <button type="submit" class="search-btn">
+                <i class="fal fa-search m-0"></i>
+            </button>
+        </form>
+    </div>
+</header>
+<!-- Header End -->
+<!-- Subheader Start -->
+<div class="subheader relative z-1" style="background-image: url(static/image/subheader.jpg);">
+    <div class="container relative z-1">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="page_title">课程学习</h1>
+                <div class="page_breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a th:href="@{/course}" href="index1.html">课程</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">课程学习</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <img src="static/picture/element_19.png" alt="element" class="element_1 slideRightTwo">
+        <img src="static/picture/element_10.png" alt="element" class="element_2 zoom-fade">
+        <img src="static/picture/element_20.png" alt="element" class="element_3 rotate_elem">
+        <img src="static/picture/element_21.png" alt="element" class="element_4 rotate_elem">
+    </div>
+</div>
+<!-- Subheader End -->
+<!-- Details Start -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="course_details mb-md-80 wow fadeInDown">
+                    <ul class="nav nav-tabs style_4">
+                        <li class="nav-item">
+                            <a href="#description" class="nav-link active" data-toggle="tab">学习</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#knowledge" class="nav-link" data-toggle="tab">知识点</a>
+                        </li>
+                        <li class="nav-item" th:if="${exerciselock}" style="display: none" id="exercisebu">
+                            <a href="#curriculum" class="nav-link" data-toggle="tab">本章习题</a>
+                        </li>
+                        <li class="nav-item" id="answerexercisebu" th:if="${exerciselock&&testcondition.trycount>0}">
+                            <a href="#curriculum" class="nav-link" data-toggle="tab">习题答案</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="description">
+                            <div class="desc_box">
+                                <h2 class="title" th:text="'第'+${chapter.chaptercode}+'章'"></h2>
+                                <h2 class="title" th:text="${chapter.chaptername}">章名称</h2>
+                                <h5 class="title1" th:text="${targnc.classname}">节类名称</h5>
+                                <h4 class="title2" th:text="${targn.nodename}">节名称</h4>
+                                <!-- Box Start -->
+                                <div class="col-lg-4 col-md-6 masonry-item lifestyle fashion business"
+                                     id="vedio_detail">
+                                    <video th:src="'/upload/vedio/'+${targn.content}" src="upload/vedio/"
+                                           controls="controls">
+                                        your browser does not support the video tag
+                                    </video>
+                                    <!--                                        <div class="video_box wow fadeInUp" data-wow-delay=".10ms">-->
+                                    <!--                                            <img src="static/picture/13.jpg" alt="img" class="image-fit">-->
+                                    <!--                                            <a href="javascript:;" class="popup-youtube video_btn">-->
+                                    <!--                                                <i class="fas fa-play"></i>-->
+                                    <!--                                            </a>-->
+                                    <!--                                        </div>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="knowledge">
+                            <div>
+                                <ul class="about_list style_2">
+                                    <li th:each="word:${words}" class="myli">
+                                        <div>
+                                            <h5 th:text="${word.name}"></h5>
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <p th:utext="${word.content}"></p>
+                                        </div>
+                                        <hr>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="curriculum">
+                            <form method="post" th:action="@{/submitExercise}" id="subtestform">
+                                <input type="text" name="charpterid" th:value="${chapter.idcourse}"
+                                       style="display:none;">
+                                <input type="text" name="time-diff" style="display:none;" value="" id="time-diff">
+                                <div th:each="judge:${judgeli}">
+                                    <h5>判断题</h5>
+                                    <p><span th:text="${judge.score}"></span>分</p>
+                                    <p th:utext="${judge.exercisecontent}">题干</p>
+                                    <ul class="about_list style_2">
+                                        <li th:each="jop,jopstat:${judge.optionsDi}">
+                                            <label><input th:name="'j'+${judge.idexercises}" type="radio"
+                                                          th:value="${jopstat.index}"/>[[${jop}]]</label>
+                                        </li>
+                                        <input style="display: none" th:name="'j'+${judge.idexercises}" type="radio"
+                                               checked value="-1"/>
+                                    </ul>
+                                    <div class="rightanswer" th:if="${testcondition.trycount>0}">
+                                        <span>您的答案：</span>
+                                        <p th:utext="${judge.useranwser}" style="color: darkred">答案</p>
+                                        <span>正确答案：</span>
+                                        <p th:utext="${judge.answershow}" style="color: darkred">答案</p>
+                                        <span>知识点：</span>
+                                        <p th:utext="${judge.parsing}" style="color: darkred">答案</p></div>
+                                    <hr>
+                                </div>
+                                <div th:each="opt:${optionli}">
+                                    <h5>选择题</h5>
+                                    <p><span th:text="${opt.score}"></span>分</p>
+                                    <p th:utext="${opt.exercisecontent}">题干</p>
+                                    <ul class="about_list style_2">
+                                        <li th:each="oop,oppstat:${opt.optionsDi}">
+                                            <label><input th:name="'o'+${opt.idexercises}" type="radio"
+                                                          th:value="${oppstat.index}"/>[[${oop}]]</label>
+                                        </li>
+                                        <input style="display: none" th:name="'o'+${opt.idexercises}" type="radio"
+                                               checked value="-1"/>
+                                    </ul>
+                                    <div class="rightanswer" th:if="${testcondition.trycount>0}">
+                                        <span>您的答案：</span>
+                                        <p th:utext="${opt.useranwser}" style="color: darkred">答案</p>
+                                        <span>正确答案：</span>
+                                        <p th:utext="${opt.answershow}" style="color: darkred">答案</p>
+                                        <span>知识点：</span>
+                                        <p th:utext="${opt.parsing}" style="color: darkred">答案</p></div>
+                                    <hr>
+                                </div>
+                                <div th:each="ans:${qali}">
+                                    <h5>问答题</h5>
+                                    <p><span th:text="${ans.score}"></span>分</p>
+                                    <p th:utext="${ans.exercisecontent}"></p>
+                                    <textarea rows="6" style="width:75%;resize:none;" class="richarea"
+                                              th:name="q+${ans.idexercises}"></textarea>
+                                    <div class="rightanswer" th:if="${testcondition.trycount>0}">
+                                        <span>您的答案：</span>
+                                        <p th:utext="${ans.useranwser}" style="color: darkred">答案</p>
+                                        <span>正确答案：</span>
+                                        <p th:utext="${ans.answershow}" style="color: darkred">答案</p>
+                                        <span>知识点：</span>
+                                        <p th:utext="${ans.parsing}" style="color: darkred">答案</p></div>
+                                    <hr>
+                                    <hr>
+                                </div>
+                                <!--                                <div>-->
+                                <!--                                    <h5>题目</h5>-->
+                                <!--                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed-->
+                                <!--                                        quia-->
+                                <!--                                        consequuntur magni dolores eos quirati voluptatem sequi nesciunt. Neque porro-->
+                                <!--                                        quisquam est qui dolorem ipsum quia dolor sit aconsece tuadipisci velit, sed-->
+                                <!--                                        quia-->
+                                <!--                                        non numquam eius modi tempora incidunt ut labore et dolore magnam </p>-->
+                                <!--                                    <ul class="about_list style_2">-->
+                                <!--                                        <li>-->
+                                <!--                                            Business Consulting-->
+                                <!--                                        </li>-->
+                                <!--                                        <li>-->
+                                <!--                                            Career Development-->
+                                <!--                                        </li>-->
+                                <!--                                        <li>-->
+                                <!--                                            Financial Solutions-->
+                                <!--                                        </li>-->
+                                <!--                                    </ul>-->
+                                <!--                                    <hr>-->
+                                <!--                                </div>-->
+                                <button type="button" id="subexercise" style="display: none"
+                                        class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">提交练习<i
+                                        class="fal fa-chevron-right ml-2"></i></button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-9 col-lg-11">
+                            <div class="tab-content wow fadeInDown">
+                                <div class="tab-pane fade active show" id="general">
+                                    <div class="accordion accordion-style style_2 mb-xl-30" id="generalaccordion">
+                                        <div class="card" th:each="class:${nodeclasses}">
+                                            <div class="card-header">
+                                                <button class="btn btn-link collapsed" type="button"
+                                                        data-toggle="collapse" th:data-target="'#c'+${class.classnode}"
+                                                        aria-expanded="false"
+                                                        aria-controls="GeneralItemSeven"
+                                                        th:text="${chapter.chaptercode}+'.'+${class.classnode}+' '+${class.classname}">
+                                                    1.1 Java的哥哥
+                                                </button>
+                                            </div>
+                                            <div th:id="'c'+${class.classnode}" id="n1" class="collapse"
+                                                 aria-labelledby="GeneralItemSeven"
+                                                 data-parent="#generalaccordion">
+                                                <div th:each="node:${class.classnodes}">
+                                                    <a th:href="@{/courseDetail(chapterid=${chapter.idcourse},classcode=${class.classnode},nodecode=${node.nodecode})}"
+                                                       class="card-body" th:text="${chapter.chaptercode}+'.'+${class.classnode}+
+                                                    '.'+${node.nodecode}+' '+${node.nodename}">
+                                                        1.1.1 Java的弟弟
+                                                    </a>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar_widget info_widgets wow fadeInUp"
+                         th:if="${exerciselock&&testcondition.trycount>0}">
+                        <ul>
+                            <!--                            <li>-->
+                            <!--                                <div class="left-side">-->
+                            <!--                                    <i class="fal fa-clock"></i>-->
+                            <!--                                    <h6 class="mb-0">练习用时</h6>-->
+                            <!--                                </div>-->
+                            <!--                                <div class="right-side">-->
+                            <!--                                    360 Hours-->
+                            <!--                                </div>-->
+                            <!--                            </li>-->
+                            <li>
+                                <div class="left-side">
+                                    <i class="fal fa-user-graduate"></i>
+                                    <h6 class="mb-0">判断题得分</h6>
+                                </div>
+                                <div class="right-side"
+                                     th:text="${testcondition.jscore}+'/'+${testcondition.sumjscore}">
+                                    100/100
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-side">
+                                    <i class="fal fa-user-graduate"></i>
+                                    <h6 class="mb-0">选择题得分</h6>
+                                </div>
+                                <div class="right-side"
+                                     th:text="${testcondition.oscore}+'/'+${testcondition.sumoscore}">
+                                    100/100
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-side">
+                                    <i class="fal fa-user-graduate"></i>
+                                    <h6 class="mb-0">测试所用时间</h6>
+                                </div>
+                                <div class="right-side" th:text="${testcondition.time_tran}">
+                                    100/100
+                                </div>
+                            </li>
+                            <li th:if="${testcondition.isfinished==1}">
+                                <div class="left-side">
+                                    <i class="fal fa-user-graduate"></i>
+                                    <h6 class="mb-0">总得分</h6>
+                                </div>
+                                <div class="right-side"
+                                     th:text="${testcondition.sumscore}+'/'+${testcondition.sumtestscore}">
+                                    100/100
+                                </div>
+                            </li>
+                            <li th:if="!${testcondition.isfinished==1}">
+                                <div class="right-side">
+                                    未批改
+                                </div>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <cite class="mb-xl-20"
+                          th:if="${exerciselock&&testcondition.trycount>0&&testcondition.isfinished==1}">对自己的表现不满意？您可以在此再次练习</cite>
+                    <a th:if="${exerciselock&&testcondition.trycount>0&&testcondition.isfinished==1}"
+                       class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" id="restartexercise">重新练习<i
+                            class="fal fa-chevron-right ml-2"></i></a>
+                    <cite class="mb-xl-20" th:if="${exerciselock&&testcondition.trycount==0}">学习完了？点击开始课后测试！</cite>
+                    <a th:if="${exerciselock&&testcondition.trycount==0}" id="startexercise"
+                       class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">开始测试<i
+                            class="fal fa-chevron-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer End -->
+
+<a href="#" data-target="html" class="back-to-top ft-sticky">
+    <i class="fal fa-long-arrow-up"></i>
+</a>
+<!-- Scripts -->
+<script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/slick.min.js"></script>
+<script src="static/js/imagesloaded.min.js"></script>
+<script src="static/js/isotope.pkgd.min.js"></script>
+<script src="static/js/jquery.magnific-popup.min.js"></script>
+<script src="static/js/jquery.counterup.min.js"></script>
+<script src="static/js/jquery.inview.min.js"></script>
+<script src="static/js/jquery.easypiechart.js"></script>
+<script src="static/js/jquery.countdown.min.js"></script>
+<script src="static/js/wow.min.js"></script>
+<script src="static/js/custom.js"></script>
+<script src="ckeditor/ckeditor.js"></script>
+<script>
+    var startdata
+    var enddata
+    $("#startexercise").click(function () {
+        // $(".richarea").css("display","inline")
+        $("#subexercise").css("display", "inline")
+        $(".rightanswer").css("display", "none")
+        $("#answerexercisebu").css("display", "none")
+        $("#exercisebu").css("display", "inline")
+        startdata = new Date();
+        console.log(startdata);
+    })
+    $("#restartexercise").click(function () {
+        // $(".richarea").css("display","inline")
+        $("#subexercise").css("display", "inline")
+        $(".rightanswer").css("display", "none")
+        $("#answerexercisebu").css("display", "none")
+        $("#exercisebu").css("display", "inline")
+        startdata = new Date();
+        console.log(startdata);
+    })
+    $("#subexercise").click(function () {
+        $(".rightanswer").css("display", "inline")
+        $("#answerexercisebu").css("display", "inline")
+        enddata = new Date();
+        data_diff = enddata - startdata
+        $("#time-diff").attr("value", data_diff);
+        //console.log($("#time-diff").val())
+        $("#subtestform").submit();
+        //var seconds = (data_diff % (1000 * 60)) / 1000;
+
+    })
+
+</script>
+<script type="text/javascript">
+    CKEDITOR.replaceAll();
+    //CKEDITOR.replace('abab');//这句话相当的重要，没有这句话，只会显示文本域，没有富文本框的效果
+
+</script>
+</body>
+
+</html>

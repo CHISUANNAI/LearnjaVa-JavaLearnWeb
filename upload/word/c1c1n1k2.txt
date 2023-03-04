@@ -1,0 +1,33 @@
+Java编程语言的特点
+简单(Simple)
+简单易学
+不存在指针、单一继承、内存空间自动回收
+面向对象(Object oriented)
+类和对象数据和方法的封装
+封装、继承、多态性
+注重于数据和操作数据的方法，而不是流
+解释性(Interpreted)
+Java编译器生成字节码，Java解释器执行字节码
+链接过程简单，仅仅将新的类装载(load)入运行环境
+鲁棒/健壮(Robust)和安全(Secure)
+取消了指针的不安全性，增强了程序的健壮性
+内存管理简单，“new”构造对象，对象释放(automatic garbage collection)
+可靠的语言: compile-time checking和run-time checking
+网络环境的应用不会产生恶意行为，为Java程序构造一个个(Sandbox，具有安全策略的限制)，提高了安全性
+多线程(Multithreaded)
+例: 浏览器应用中，播听音乐/拖动页面/后台下载页面
+线程类: java.lang.Thread/Runnable/ThreadGroup等
+原语支持: synchronized、wait()、notify()
+分布式(Distributed)
+支持网络应用, java.net.*
+URL类
+Socket类、ServerSocket类
+DatagramSocket类、DatagramPacket类
+高性能(High performance)
+解释性的语言，没有C语言快
+“Just-In-Time” JIT编译器，在运行时将Java字节码转变为机器码
+Java HotSpot Compilers
+动态(Dynamic)
+Java语言在执行的链接(link)阶段是动态的
+class类仅在需要时被链接
+被链接的代码模块可以有不同的来源，从本地或从网络

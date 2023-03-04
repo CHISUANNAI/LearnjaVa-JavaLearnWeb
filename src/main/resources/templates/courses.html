@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>LeanjaVa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description website">
+    <meta name="keywords" content="website, with, meta, tags">
+    <!-- Css -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/slick.css" rel="stylesheet">
+    <link href="static/css/magnific-popup.css" rel="stylesheet">
+    <link href="static/css/animate.css" rel="stylesheet">
+    <link href="static/css/flaticon.css" rel="stylesheet">
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/responsive.css" rel="stylesheet">
+    <link href="static/css/aside.css" rel="stylesheet">
+    <link href="static/css/courses.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Preloader Start -->
+<div class="preloader">
+    <img src="static/picture/preloader.svg" alt="preloader">
+</div>
+<!-- Preloader End -->
+<!-- Mobile Menu Start -->
+<aside class="aside_bar aside_bar_left aside_mobile">
+    <!-- logo -->
+    <a href="" class="logo">
+        <img src="static/picture/logo.jpeg" alt="logo">
+    </a>
+    <!-- logo -->
+    <!-- Menu -->
+    <nav>
+        <ul class="main-menu">
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Home</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="">Life Coach</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index-2.html">Health Coach</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index-3.html">Business Coach</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Pages</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about-2.html">About Me</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="videos.html">Videos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Team</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="team.html">Team</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="team-details.html">Team Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="faqs.html">FAQ's</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Courses</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="courses.html">Courses</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="course-details.html">Course Details</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Blog</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="blog-grid.html">Blog Grid</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog-list.html">Blog List</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog-masonry.html">Blog Masonry</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog-details.html">Blog Details</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Portfolio</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="portfolio-grid.html">Portfolio Grid</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portfolio-gallery.html">Portfolio Gallery</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portfolio-masonry.html">Portfolio Masonry</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portfolio-details.html">Portfolio Details</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="contact.html">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Menu -->
+</aside>
+<div class="aside-overlay trigger-left"></div>
+<!-- Mobile Menu End -->
+<!-- Canvas Start -->
+<div class="aside-overlay trigger-right"></div>
+<!-- Mobile Menu End -->
+<!-- Header Start -->
+<header class="header header-3">
+    <div class="nav_sec">
+        <div class="container">
+            <!-- inner -->
+            <div class="nav_warp" id="coursenav">
+                <nav>
+                    <!-- logo start -->
+                    <div class="logo">
+                        <a href="index1.html">
+                            <img src="static/picture/logo.png" alt="logo" class="logopic1">
+                        </a>
+                    </div>
+                    <!-- logo end -->
+                    <!-- Navigation Start -->
+                    <ul class="main-menu">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" th:href="@{/index}">主页</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" th:href="@{/course}">课程</a>
+                        </li>
+                    </ul>
+                    <!-- Navigation Ens -->
+                    <!-- Head Actions -->
+                </nav>
+            </div>
+            <!-- inner -->
+        </div>
+    </div>
+</header>
+<!-- Header End -->
+<!-- Subheader Start -->
+<div class="subheader relative z-1" style="background-image: url(static/image/subheader.jpg);">
+    <div class="container relative z-1">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="page_title">课程</h1>
+                <div class="page_breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a th:href="@{/index}" href="index1.html">主页</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">课程</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <img src="static/picture/element_19.png" alt="element" class="element_1 slideRightTwo">
+        <img src="static/picture/element_10.png" alt="element" class="element_2 zoom-fade">
+        <img src="static/picture/element_20.png" alt="element" class="element_3 rotate_elem">
+        <img src="static/picture/element_21.png" alt="element" class="element_4 rotate_elem">
+    </div>
+</div>
+<!-- Subheader End -->
+<!-- Coach Grid Start -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <!-- Coach block -->
+            <div class="col-xl-4 col-md-6" th:each="chapter:${page.records}">
+                <div class="coach_block wow fadeInUp" data-wow-delay=".10ms">
+                    <div class="coach_img">
+                        <img src="static/picture/15.jpg" alt="img" class="image-fit">
+                        <div class="coach_badges">
+                            <span class="tag_badge bg-thm-color-four" th:text="${chapter.islocked}==true?'已锁定':'可进行学习'">可进行学习</span>
+                        </div>
+                        <a th:href="@{/courseDetail(chapterid=${chapter.idcourse})}" th:if="!${chapter.islocked}"
+                           class="thm-btn thm-color-two bg-thm-color-white thm-color-two-shadow btn-circle link">
+                            <i class="fal fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <div class="coach_caption">
+                        <div class="coach_meta">
+                            <a class="coach_cat thm-btn bg-thm-color-three thm-color-three-shadow btn-rounded">第<span th:text="${chapter.chaptercode}"></span>章</a>
+                        </div>
+                        <h5 class="title mb-xl-20">
+                            <a th:text="${chapter.chaptername}">
+                                认识Java
+                            </a>
+                        </h5>
+                        <div class="author" th:if="${chapter.islocked}">
+                            <a>需要先完成</a>
+                            <span th:each="depen:${chapter.dependency_show}"><a class="thm-color-one"
+                            >第<span th:text="${depen}"></span>章 </a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Coach block -->
+            <!-- Coach block -->
+
+        </div>
+        <!-- Pagination -->
+<!--        <nav aria-label="Page navigation example">-->
+<!--            <ul class="pagination justify-content-center">-->
+<!--                <li class="page-item">-->
+<!--                    <a href="#" class="page-link">-->
+<!--                        <i class="fal fa-chevron-left"></i>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="page-item active">-->
+<!--                    <a href="#" class="page-link">01</a>-->
+<!--                </li>-->
+<!--                <li class="page-item">-->
+<!--                    <a href="#" class="page-link">02</a>-->
+<!--                </li>-->
+<!--                <li class="page-item">-->
+<!--                    <a href="#" class="page-link">03</a>-->
+<!--                </li>-->
+<!--                <li class="page-item">-->
+<!--                    <a href="#" class="page-link">-->
+<!--                        <i class="fal fa-chevron-right"></i>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+        <!-- Pagination -->
+    </div>
+</section>
+<!-- Footer End -->
+<a href="#" data-target="html" class="back-to-top ft-sticky">
+    <i class="fal fa-long-arrow-up"></i>
+</a>
+<!-- Scripts -->
+<script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/slick.min.js"></script>
+<script src="static/js/imagesloaded.min.js"></script>
+<script src="static/js/isotope.pkgd.min.js"></script>
+<script src="static/js/jquery.magnific-popup.min.js"></script>
+<script src="static/js/jquery.counterup.min.js"></script>
+<script src="static/js/jquery.inview.min.js"></script>
+<script src="static/js/jquery.easypiechart.js"></script>
+<script src="static/js/jquery.countdown.min.js"></script>
+<script src="static/js/wow.min.js"></script>
+<script src="static/js/custom.js"></script>
+</body>
+
+</html>

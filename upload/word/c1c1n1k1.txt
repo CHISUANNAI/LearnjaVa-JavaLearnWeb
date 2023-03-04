@@ -1,0 +1,63 @@
+早期的历史
+1991年，Sun Microsystems公司建立“the Green Project”(Secretly)，13个成员，目的开发消费电子类产品市场(嵌入式设备)，初始选择C++语言
+1992年夏天，*7设备，运行在一种全新的、对立于处理器的语言“Oak”，潜在的市场有线电视
+Green TeamFirstPerson Team(70人)，电视机顶盒/video-on-demand，市场不成熟  ? ? ?
+James Gosling, Bill Joy, and Eric Schmidt …  “why not the Internet?" 
+在Mosaic浏览器的基础上开发“WebRunner”，“Hollywood-meets-Silicon-Valley”的两个演示(3D动态分子、线排序)
+Java面世
+1995年3月，“1.0a” 7/8份二进制拷贝，“1.0a2”源代码公布在Internet
+下载数量和反馈邮件剧增
+On May 23, 1995, John Gage, director of the Science Office for Sun Microsystems, and Marc Andreessen, cofounder and executive vice president at NetscapeTM, stepped onto a stage and announced to the SunWorld audience that JavaTM technology was real, it was official, and it was going to be incorporated into Netscape NavigatorTM, the world's portal to the Internet. 
+A new SPARC based, handheld wireless PDA, 
+with a 5" color LCD with touchscreen input
+五年回顾(1996－2000)
+1995年
+May 23, Java technology launched 
+1996年
+Jan 23, JDK 1.0 software release
+May 29, first JavaOne developer conference (JavaBeans, Java Media APIs, servlets, etc)
+July 10, 50,000 people attend Sun Java Day in Tokyo
+Aug 16, Sun/Addison-Wesley (The Java Tutorial and the first Java Language Specification)
+Sep, 83,000 Web pages have incorporated Java technology
+Oct 25, Sun announces first Just-In-Time (JIT) compiler for Java platform
+Oct 29, Java Card API announced
+1999年
+Sep 30, J2EE beta software released
+Dec 8, J2EE platform ships
+Dec 8, J2SE platform on Linux ships
+2000年
+Apr 19, J2EE platform licensed to Art Technology Group, BEA Systems, Compaq, Hitachi, SilverStream, Sybase, ..
+May, Membership in Java Developer Connection program tops 1.5 million
+May 8, Sun to work with Chinese TV industry to define interactive digital TV spec for China TV
+May 8, J2SE v. 1.3 platform released
+May 17, J2SE v 1.3 platform gains industry support from Apple with Mac OS X
+
+Dec 9, JDK 1.1 beta software released
+五年回顾(1996－2000)
+1997年
+Feb 18, JDK 1.1 release ships
+Mar 4, Java Web Server beta and Java Servlet Developers Kit software released
+Mar 10, Java Naming and Directory Interface (JNDI) API introduced
+Mar 11, More than 220,000 downloads of JDK 1.1 software in just three weeks
+Apr 2, JavaOne conference (10,000 attendees, the world's largest developer conference), Enterprise JavaBeans technology
+Aug 5, Java Media and Communication APIs released
+Aug 5, More than 100,000 downloads of JavaBeans Development Kit software
+Sep 23, Java Developer Connection program has 100,000+ members
+1998年
+Jan 20, JDK 1.1 software release downloads top 2 million
+Mar 24, JavaOne conference draws 15,000
+Mar 31, Ericsson, Sony, Siemens, BEA, OpenTV and others license Java technology
+June 3, Visa launches world's first smart card based on Visa's Open Platform and Sun's Java Card technology
+Nov 5, Sun works with Linux Community on Java 2 software port to Linux
+Dec 8, Java 2 platform ships
+1999年
+Jan 13, Major consumer electronics manufacturers support Java technology for digital television
+Feb 24, Java 2 platform source code released
+Mar 4, XML support for Java platform unveiled
+Mar 27, Java HotSpot performance engine unveiled
+June 2, JavaServer Pages technology unveiled
+June 15, JavaOne developer conference draws 20,000
+June 15, Sun announces three editions of Java platform: J2SE, J2EE, J2ME
+June 29, J2EE Reference Implementation Alpha ships
+Aug 25, J2SE version 1.3 beta software released
+Aug, The JavaPhone API specification included in an approved GSM standard by the European Telecommunications Standards Institute 

@@ -1,0 +1,30 @@
+#coursenav{
+    width: 25%;
+}
+.title1{
+    font-size: 24px;
+    color: #333;
+}
+.title2{
+    font-size: 24px;
+    color: #666;
+}
+.logopic{
+    height: 100%;
+}
+.logopic1{
+    height: 100px;
+}
+#vedio_detail{
+    max-width: 100%;
+}
+vedio{
+    width: 100%;
+}
+#startexercise:hover
+{
+    cursor: pointer;
+}
+.about_list .myli{
+    display: block;
+}

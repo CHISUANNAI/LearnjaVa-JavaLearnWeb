@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>LeanjaVa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description website">
+    <meta name="keywords" content="website, with, meta, tags">
+    <!-- Css -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/slick.css" rel="stylesheet">
+    <link href="static/css/magnific-popup.css" rel="stylesheet">
+    <link href="static/css/animate.css" rel="stylesheet">
+    <link href="static/css/flaticon.css" rel="stylesheet">
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/responsive.css" rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Preloader Start -->
+<div class="preloader">
+    <img src="static/picture/preloader.svg" alt="preloader">
+</div>
+<!-- Preloader End -->
+<!-- Mobile Menu Start -->
+<aside class="aside_bar aside_bar_left aside_mobile">
+    <!-- logo -->
+    <a href="" class="logo">
+        <img src="static/picture/logo.jpeg" alt="logo">
+    </a>
+    <!-- logo -->
+    <!-- Menu -->
+    <nav>
+        <ul class="main-menu">
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Home</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="">Life Coach</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index-2.html">Health Coach</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index-3.html">Business Coach</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Pages</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about-2.html">About Me</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="videos.html">Videos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Team</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="team.html">Team</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="team-details.html">Team Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="faqs.html">FAQ's</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Courses</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="courses.html">Courses</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="course-details.html">Course Details</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Blog</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="blog-grid.html">Blog Grid</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog-list.html">Blog List</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog-masonry.html">Blog Masonry</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog-details.html">Blog Details</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Portfolio</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="portfolio-grid.html">Portfolio Grid</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portfolio-gallery.html">Portfolio Gallery</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portfolio-masonry.html">Portfolio Masonry</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portfolio-details.html">Portfolio Details</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="contact.html">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Menu -->
+</aside>
+<div class="aside-overlay trigger-left"></div>
+<!-- Mobile Menu End -->
+<!-- Canvas Start -->
+<aside class="aside_bar aside_bar_right aside_canvas">
+    <!-- logo -->
+    <a href="" class="logo pl-0">
+        <img class="logopic" src="static/picture/logo.png" alt="logo">
+    </a>
+    <!-- logo -->
+
+    <div class="sidebar">
+        <div class="sidebar_widget recent_widgets">
+            <h5 class="user_title" th:text="${session.name}">用户名</h5>
+            <h6 class="user_title" th:text="${session.usertype}?'学生':'老师'">用户类型</h6>
+            <h6 class="user_title" th:text="'班级：'+${session.userclassname}"></h6>
+            <ul th:if="${session.usertype}">
+                <li>
+                    <div class="shape_img relative">
+                        <div class="progress_box fadeInUp">
+                            <div class="circle_bar" th:data-percent="${prgressrate}" data-track-color="#ecf2ff" data-bar-color="#4b83fb" data-size="80">
+                                <div class="counter transform-center text-center">
+                                    <b data-from="0" th:data-to="${prgressrate}">0</b>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h6 class="mb-0">学习进度<br></h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul th:if="!${session.usertype}">
+                <li>
+                    <div class="text">
+                        <h6 class="mb-0">
+                            <button type="button" id="addClass">创建班级</button>
+                        </h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        <h6 class="mb-0">
+                            <a th:href="@{/correct}">习题批改</a>
+                        </h6>
+                    </div>
+                </li>
+            </ul>
+            <h6 class="mb-0">
+                <a href="course-details.html" th:href="@{/logout}">退出登录</a>
+            </h6>
+        </div>
+    </div>
+</aside>
+<div class="aside-overlay trigger-right"></div>
+<!-- Canvas End -->
+<!-- Header Start -->
+<header class="header header-absolute can-sticky">
+    <div class="container">
+        <!-- inner -->
+        <div class="nav_warp">
+            <nav>
+                <!-- logo start -->
+                <div class="logo">
+                    <a href="">
+                        <img src="static/picture/logo.png" alt="logo" class="logopic1">
+                    </a>
+                </div>
+                <!-- logo end -->
+                <!-- Navigation Start -->
+                <ul class="main-menu">
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" th:href="@{/index}">主页</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" th:href="@{/course}">课程</a>
+                    </li>
+                </ul>
+                <div class="head_actions">
+                    <a th:href="@{/courseDetail(chapterid=${user.lastLearnc},classcode=${user.lastLearnca},nodecode=${user.lastLearnn})}" href="contact.html" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">从上次学习的进度开始学习<i
+                            class="fal fa-chevron-right ml-2"></i></a>
+                    <button type="button" class="head_trigger mobile_trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <!-- Navigation Ens -->
+            </nav>
+            <!-- Head Actions -->
+            <div class="head_actions">
+                <button type="button" class="head_trigger desktop_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button type="button" class="head_trigger mobile_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- Head Actions -->
+        </div>
+        <!-- inner -->
+    </div>
+</header>
+<!-- Header End -->
+<!-- Banner Start -->
+<div class="banner relative z-1">
+    <img src="static/picture/element_1.png" class="element_1" alt="Element">
+    <img src="static/picture/element_line.png" class="element_line" alt="Element Line">
+    <!-- Texts -->
+    <div class="transform-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="text_box">
+                        <h1 class="title wow fadeInUp" data-wow-delay=".30ms"><span>学习Java</span>
+                            <br>就来LV
+                        </h1>
+                        <p class="wow fadeInUp" data-wow-delay=".40ms">
+                            LearnjaVa平台是一个专注辅助java学习的网站，具备学习评价、学习过程记录、学习路径推荐等功能</p>
+                        <a id="joinclass"
+                           class="thm-btn bg-thm-color-two thm-color-two-shadow btn-rounded mr-4 mb-4 wow fadeInRight"
+                           data-wow-delay=".50ms"  th:if="${session.usertype}">加入班级<i class="fal fa-chevron-right ml-2"></i></a>
+                        <a th:href="@{/course}" class="video_btn video_text mb-4  wow fadeInRight"
+                           data-wow-delay=".70ms">
+                            <i class="fas fa-play video_icon bg-thm-color-three"></i>
+                            <span>开始学习</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image_box relative wow fadeInRight" data-wow-delay=".80ms">
+                        <img src="static/picture/banner_img.png" alt="img" class="image-fit">
+                        <span class="bg-thm-color-three circle_element"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Line -->
+    <div class="bottom-line container"></div>
+</div>
+<!-- Banner End -->
+<!-- Features Start -->
+
+
+<!-- Plane Start -->
+<div class="bg-thm-color-two plane_box relative z-1">
+    <div class="container relative z-1">
+        <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-11 relative z-1">
+                <img src="static/picture/element_6.png" class="element_1 rotate_elem" alt="Element">
+                <h2 class="thm-color-white">LearnjaVa拥有最神奇的课程和最前沿的习题，赶快开始学习吧！</h2>
+            </div>
+        </div>
+        <img src="static/picture/element_7.png" class="element_2 zoom-fade" alt="Element">
+    </div>
+</div>
+<!-- Plane End -->
+<!-- Footer End -->
+<a href="#" data-target="html" class="back-to-top ft-sticky">
+    <i class="fal fa-long-arrow-up"></i>
+</a>
+<!-- Scripts -->
+<script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/slick.min.js"></script>
+<script src="static/js/imagesloaded.min.js"></script>
+<script src="static/js/isotope.pkgd.min.js"></script>
+<script src="static/js/jquery.magnific-popup.min.js"></script>
+<script src="static/js/jquery.counterup.min.js"></script>
+<script src="static/js/jquery.inview.min.js"></script>
+<script src="static/js/jquery.easypiechart.js"></script>
+<script src="static/js/jquery.countdown.min.js"></script>
+<script src="static/js/wow.min.js"></script>
+<script src="static/js/custom.js"></script>
+<script th:inline="javascript">
+    $("#joinclass").click(function () {
+        if([[${session.userclassid}]]==6){
+        var classname=prompt("输入班级名");
+        $.ajax({
+            url: "/joinClass",
+            type: "POST",
+            data: {classname: classname},
+            success: function (data) {
+                if(data==0){
+                    console.log(data)
+                    alert("不存在此班级")
+                }else if(data==1){
+                    console.log(data)
+                    alert("请勿重复加入班级")
+                }else {
+                    console.log(data)
+                    alert("加入成功！")
+                }
+            },
+            error: function () {
+                console.log("error")
+            }
+        })}else {
+            alert("请勿重复加入班级")
+        }
+    })
+</script>
+<script>
+    $("#addClass").click(function () {
+        var classname=prompt("输入班级名称");
+            $.ajax({
+                url: "/addClass",
+                type: "GET",
+                data: {classname: classname},
+                success: function (data) {
+                    if(data==0){
+                        alert("班级名称重复，请重新创建")
+                    }else{
+                        alert("创建成功！")
+                    }
+                    console.log(data)
+                },
+                error: function () {
+                    console.log("error")
+                }
+            })
+    })
+</script>
+</body>
+
+</html>

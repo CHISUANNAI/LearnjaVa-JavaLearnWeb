@@ -1,0 +1,18 @@
+#left{
+    margin-left: 0.5rem!important;
+    margin-right: 0.5rem!important;
+}
+#right{
+    margin-left: 0.5rem!important;
+    margin-right: 0.5rem!important;
+}
+p{
+    text-align: left;
+}
+.form-control:disabled, .form-control[readonly] {
+    background-color: white;
+    opacity: 1;
+}
+#wait{
+    display: inline;
+}

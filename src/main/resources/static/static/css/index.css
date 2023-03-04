@@ -1,0 +1,23 @@
+.logopic{
+    height: 100%;
+}
+.logopic1{
+    height: 100px;
+}
+#lenging-progress {
+    width: 100%;
+}
+button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+button:hover{
+    color: #999;
+}
+#joinclass:hover{
+    cursor: pointer;
+}
